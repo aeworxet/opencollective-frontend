@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 import { defineMessages, FormattedMessage, useIntl } from 'react-intl';
 import styled from 'styled-components';
 
@@ -97,7 +98,7 @@ const PricingTabs = ({ onChange, activeTab }) => {
     <Container display={[activeTab ? 'none' : 'block', null, 'flex']} flexDirection="column" alignItems="center">
       <Wrapper>
         <Box width={1} display={['flex', null, 'none']}>
-          <img width="100%" src="/static/images/pricing-star-bg-sm.png" alt="Pricing" />
+          <Image src="/static/images/pricing-star-bg-sm.png" alt="Pricing" layout="fill" />
         </Box>
         <Title
           fontSize={['24px', null, '48px']}
